@@ -3,7 +3,7 @@
     <v-layout justify-center>
       <v-app-bar
         color="transparent"
-        flat
+        elevation="0"
         app
       >
         <div
@@ -26,7 +26,7 @@
             >Contact</v-btn>
           </v-toolbar-items>
       </v-app-bar>
-      <v-navigation-drawer v-model="drawer" absolute clipped temporary>
+      <v-navigation-drawer v-model="drawer" absolute temporary>
         <template v-slot:prepend>
           <v-list-item two-line>
             <v-list-item-avatar>
