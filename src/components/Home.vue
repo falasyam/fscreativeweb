@@ -1,29 +1,28 @@
 <template>
+  <section id="home" justify="center">
+    <div class="py-12"></div>
+    <v-responsive  width="100vw" height="100vh">
     <v-container
         fluid
+        class="fill-height"
     >
-        <br>
-        <v-row align="center" justify="center">
-            <v-img 
-                :src="require('../assets/under.jpg')"
-                contain
-                height="400"
-                width="300"
-            />
+        <v-row no-gutters class="pa-5 ma-5">
+          <v-col cols="9">
+            <v-spacer></v-spacer>
+            <span class="display-3 font-weight-bold">
+              Hello.
+            </span>
+          </v-col>
+          <v-col cols="9">
+            <span class="display-1 font-weight-normal ">
+              We Are Poster, UI Designer and Web, Flutter, Android Developer
+            </span>
+          </v-col>
         </v-row>
-        <v-col class="mb-4" align="center" justify="center">
-          <h1 class="display-2 font-weight-bold mb-3">
-            Under Construction
-          </h1>
-
-          <p class="subheading font-weight-regular">
-            Follow our Social Media <br>
-            <v-btn class="ma-2" outlined color="red" href="http://instagram.com/fscreative.id">
-                Instagram
-            </v-btn>
-          </p>
-        </v-col>
+        <div class="py-12"></div>
     </v-container>
+    </v-responsive>
+  </section>
 </template>
 
 <style scoped>

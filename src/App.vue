@@ -17,7 +17,7 @@
               text
             >About</v-btn>
             <v-btn
-              @click="$vuetify.goTo('#portfolio',options )"
+              @click="$vuetify.goTo('#work',options )"
               text
             >My Work</v-btn>
             <v-btn
@@ -26,7 +26,7 @@
             >Contact</v-btn>
           </v-toolbar-items>
       </v-app-bar>
-      <v-navigation-drawer v-model="drawer" absolute temporary>
+      <v-navigation-drawer v-model="drawer" absolute temporary floating clipped>
         <template v-slot:prepend>
           <v-list-item two-line>
             <v-list-item-avatar>
@@ -63,6 +63,8 @@
 
     <v-content>
       <Home/>
+      <Work/>
+      <About/>
     </v-content>
     <Footer/>
   </v-app>
@@ -71,12 +73,16 @@
 <script>
 import Home from './components/Home';
 import Footer from './components/Footer';
+import Work from './components/Work';
+import About from './components/About';
 
 export default {
   name: 'App',
 
   components: {
     Home,
+    Work,
+    About,
     Footer
   },
 
@@ -86,8 +92,11 @@ export default {
         items: [
           { title: 'Home', icon: 'mdi-home' },
           { title: 'Work/Project', icon: 'mdi-code-tags' },
-          { title: 'About', icon: 'mdi-account' },
+          { title: 'About', icon: 'mdi-account',  },
         ],
+        options: {
+          fitToSection: false,
+        }
       }
     },
 };
