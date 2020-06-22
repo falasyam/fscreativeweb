@@ -9,13 +9,13 @@
         <v-row no-gutters class="pa-5 ma-5">
           <v-col cols="9">
             <v-spacer></v-spacer>
-            <span class="display-3 font-weight-bold">
-              Hello.
+            <span class="display-1 font-weight-normal">
+              Hello!
             </span>
           </v-col>
           <v-col cols="9">
-            <span class="display-1 font-weight-normal ">
-              We Are Poster, UI Designer and Web, Flutter, Android Developer
+            <span class="display-3 font-weight-bold ">
+              We Are Creative Service Provider.
             </span>
           </v-col>
         </v-row>

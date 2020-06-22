@@ -5,12 +5,13 @@
         color="transparent"
         elevation="0"
         app
+        flat
       >
         <div
             :class="{'display-5 font-weight-medium': $vuetify.breakpoint.smAndUp,'title font-weight-medium': $vuetify.breakpoint.smAndDown, }"
           >FSCREATIVE</div>
         <v-spacer></v-spacer>
-          <v-app-bar-nav-icon @click.stop="drawer = !drawer" class="hidden-md-and-up"></v-app-bar-nav-icon>
+          <v-app-bar-nav-icon @click.stop="sheet = !sheet" class="hidden-md-and-up"></v-app-bar-nav-icon>
           <v-toolbar-items class="text-right hidden-sm-and-down" id="menu">
             <v-btn
               @click="$vuetify.goTo('#about',options )"
@@ -26,46 +27,29 @@
             >Contact</v-btn>
           </v-toolbar-items>
       </v-app-bar>
-      <v-navigation-drawer v-model="drawer" absolute temporary floating clipped>
-        <template v-slot:prepend>
-          <v-list-item two-line>
-            <v-list-item-avatar>
-              <v-avatar color="red" size="48">
-                <span class="white--text headline center">FS</span>
-              </v-avatar>
-            </v-list-item-avatar>
-
-            <v-list-item-content>
-              <v-list-item-title>FSCreative</v-list-item-title>
-              <v-list-item-subtitle>Welcome</v-list-item-subtitle>
-            </v-list-item-content>
+      <v-bottom-sheet v-model="sheet">
+        <v-list>
+          <v-list-item
+            v-for="item in items"
+            :key="item.title"
+            link
+            >
+              <v-list-item-icon>
+                <v-icon>{{ item.icon }}</v-icon>
+              </v-list-item-icon>
+              <v-list-item-content>
+                <v-list-item-title>{{ item.title }}</v-list-item-title>
+              </v-list-item-content>
           </v-list-item>
-        </template>
-
-      <v-divider></v-divider>
-      <v-list>
-        <v-list-item
-          v-for="item in items"
-          :key="item.title"
-          link
-          >
-            <v-list-item-icon>
-              <v-icon>{{ item.icon }}</v-icon>
-            </v-list-item-icon>
-
-            <v-list-item-content>
-              <v-list-item-title>{{ item.title }}</v-list-item-title>
-            </v-list-item-content>
-        </v-list-item>
-      </v-list>
-      </v-navigation-drawer>
+        </v-list>
+      </v-bottom-sheet>
     </v-layout>
 
-    <v-content>
+    <v-main>
       <Home/>
       <Work/>
       <About/>
-    </v-content>
+    </v-main>
     <Footer/>
   </v-app>
 </template>
@@ -88,7 +72,7 @@ export default {
 
   data () {
       return {
-        drawer: null,
+        sheet: false,
         items: [
           { title: 'Home', icon: 'mdi-home' },
           { title: 'Work/Project', icon: 'mdi-code-tags' },

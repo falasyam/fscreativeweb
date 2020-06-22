@@ -12,7 +12,7 @@
                 <br><br>
                 <v-col cols="9">
                     <span class="display-1 font-weight-normal ">
-                        Was formed in 2019, but began to develop its wings from 2020. We will serve what you order with all my heart.
+                        We will serve what you order with all our heart.
                     </span>
                 </v-col>
                 <div class="py-9 justify-space-between"></div>
