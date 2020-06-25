@@ -14,13 +14,13 @@
           <v-app-bar-nav-icon @click.stop="sheet = !sheet" class="hidden-md-and-up"></v-app-bar-nav-icon>
           <v-toolbar-items class="text-right hidden-sm-and-down" id="menu">
             <v-btn
-              @click="$vuetify.goTo('#about',options )"
+              @click="$vuetify.goTo('services',options )"
               text
-            >About</v-btn>
+            >Service</v-btn>
             <v-btn
-              @click="$vuetify.goTo('#work',options )"
+              @click="$vuetify.goTo('#team',options )"
               text
-            >My Work</v-btn>
+            >Team</v-btn>
             <v-btn
               @click="$vuetify.goTo('#contact',options )"
               text
@@ -47,8 +47,8 @@
 
     <v-main>
       <Home/>
-      <Work/>
-      <About/>
+      <Services/>
+      <Team/>
     </v-main>
     <Footer/>
   </v-app>
@@ -57,16 +57,16 @@
 <script>
 import Home from './components/Home';
 import Footer from './components/Footer';
-import Work from './components/Work';
-import About from './components/About';
+import Services from './components/Services';
+import Team from './components/Team';
 
 export default {
   name: 'App',
 
   components: {
     Home,
-    Work,
-    About,
+    Services,
+    Team,
     Footer
   },
 
@@ -75,8 +75,8 @@ export default {
         sheet: false,
         items: [
           { title: 'Home', icon: 'mdi-home' },
-          { title: 'Work/Project', icon: 'mdi-code-tags' },
-          { title: 'About', icon: 'mdi-account',  },
+          { title: 'Services', icon: 'mdi-code-tags' },
+          { title: 'Team', icon: 'mdi-account',  },
         ],
         options: {
           fitToSection: false,
