@@ -1,5 +1,5 @@
 <template>
-    <div class="section" id="home">
+  <div class="section" id="home">
         <div class="section" id="description" justify="center">
         <v-responsive  width="100vw" height="100vh">
         <v-container
@@ -91,7 +91,7 @@
                             <v-list-item three-line>
                             <v-list-item-content>
                                 <v-list-item-title class="headline mb-1">Fala Syam</v-list-item-title>
-                                <v-list-item-text>Designer</v-list-item-text>
+                                <v-list-item-content>Designer</v-list-item-content>
                             </v-list-item-content>
 
                             <v-list-item-avatar
@@ -116,7 +116,7 @@
                             <v-list-item three-line>
                             <v-list-item-content>
                                 <v-list-item-title class="headline mb-1">Fala Syam</v-list-item-title>
-                                <v-list-item-text>Developer</v-list-item-text>
+                                <v-list-item-content>Developer</v-list-item-content>
                             </v-list-item-content>
 
                             <v-list-item-avatar
@@ -137,5 +137,15 @@
                 </v-container>
             </v-responsive>
         </div>
-    </div>
+    </div> 
 </template>
+
+<script>
+// @ is an alias to /src
+
+export default {
+  name: 'Home',
+  components: {
+  }
+}
+</script>

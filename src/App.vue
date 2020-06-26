@@ -13,13 +13,14 @@
           <v-app-bar-nav-icon @click.stop="sheet = !sheet" class="hidden-md-and-up"></v-app-bar-nav-icon>
           <v-toolbar-items class="text-right hidden-sm-and-down" id="menu">
             <v-btn
-              @click="$vuetify.goTo('#services',options )"
               text
-            >Service</v-btn>
+            ><router-link to="/">Home</router-link></v-btn>
             <v-btn
-              @click="$vuetify.goTo('#team',options )"
               text
-            >Team</v-btn>
+            ><router-link to="/about">About</router-link></v-btn>
+            <v-btn
+              text
+            ><router-link to="/work">Work</router-link></v-btn>
             <v-btn
               @click="$vuetify.goTo('#contact',options )"
               text
@@ -31,7 +32,7 @@
           <v-list-item
             v-for="item in items"
             :key="item.title"
-            link
+            :to="item.link"
             >
               <v-list-item-icon>
                 <v-icon>{{ item.icon }}</v-icon>
@@ -43,39 +44,31 @@
         </v-list>
       </v-bottom-sheet>
     </v-layout>
-
     <v-main>
-      <Home/>
-      <Services/>
-      <Team/>
+      <router-view/>
     </v-main>
     <Footer/>
   </v-app>
 </template>
 
 <script>
-import Home from './components/Home';
-import Footer from './components/Footer';
-import Services from './components/Services';
-import Team from './components/Team';
+
+import Footer from './components/Footer'
 
 export default {
   name: 'App',
 
   components: {
-    Home,
-    Services,
-    Team,
-    Footer
+    Footer,
   },
 
   data () {
       return {
         sheet: false,
         items: [
-          { title: 'Home', icon: 'mdi-home' },
-          { title: 'Services', icon: 'mdi-code-tags' },
-          { title: 'Team', icon: 'mdi-account',  },
+          { title: 'Home', icon: 'mdi-home', link:'/' },
+          { title: 'Work', icon: 'mdi-code-tags', link:'/work' },
+          { title: 'About', icon: 'mdi-account', link:'/about'  },
         ],
         options: {
           fitToSection: false,
@@ -84,3 +77,11 @@ export default {
     },
 };
 </script>
+
+<style scoped>
+  a {  
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+  }
+</style>
