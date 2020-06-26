@@ -1,8 +1,7 @@
 <template>
-  <section id="services" class="overflow-hidden">
+  <section id="services">
     <v-responsive width="100vw" height="100vh">
     <v-container class="red fill-height" fluid>
-        <div class="py-8"></div>
         <h1 class="display-1 pa-3 font-weight-bold" align="center" justify="center">Service</h1>
         <v-row no-gutters>
             <v-col cols="6" md="4" lg="12" xs="12" sm="12" class="pa-2">

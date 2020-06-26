@@ -2,6 +2,8 @@
     <v-footer
         color="white"
         padless
+        elevation="1"
+        outlined
         class="font-weight-medium">
             <v-col
                 cols="6"

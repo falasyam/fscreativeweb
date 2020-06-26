@@ -3,7 +3,6 @@
     <v-layout justify-center>
       <v-app-bar
         color="transparent"
-        elevation="0"
         app
         flat
       >
@@ -14,7 +13,7 @@
           <v-app-bar-nav-icon @click.stop="sheet = !sheet" class="hidden-md-and-up"></v-app-bar-nav-icon>
           <v-toolbar-items class="text-right hidden-sm-and-down" id="menu">
             <v-btn
-              @click="$vuetify.goTo('services',options )"
+              @click="$vuetify.goTo('#services',options )"
               text
             >Service</v-btn>
             <v-btn

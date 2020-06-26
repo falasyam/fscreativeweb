@@ -2,7 +2,7 @@
   <section id="team">
     <v-responsive width="100vw" height="100vh">
         <v-container fluid class="green fill-height">
-          <h1 class="display-1 pa-3 font-weight-bold" align="center" justify="center">Our Team</h1>
+          <h1 class="display-1 pa-3 font-weight-bold" align="center" justify="center">Team</h1>
             <v-row no-gutters>
                 <v-col cols="12" class="pa-1">
                     <v-card
@@ -37,7 +37,7 @@
                     <v-list-item three-line>
                       <v-list-item-content>
                         <v-list-item-title class="headline mb-1">Fala Syam</v-list-item-title>
-                        <v-list-item-text>Programmer</v-list-item-text>
+                        <v-list-item-text>Developer</v-list-item-text>
                       </v-list-item-content>
 
                       <v-list-item-avatar
