@@ -22,6 +22,9 @@
               text
             ><router-link to="/work">Work</router-link></v-btn>
             <v-btn
+              text
+            ><router-link to="/blog">Blog</router-link></v-btn>
+            <v-btn
               @click="$vuetify.goTo('#contact',options )"
               text
             >Contact</v-btn>
@@ -66,9 +69,10 @@ export default {
       return {
         sheet: false,
         items: [
-          { title: 'Home', icon: 'mdi-home', link:'/' },
+          { title: 'Home', icon: 'mdi-home-variant-outline', link:'/' },
+          { title: 'About', icon: 'mdi-account-outline', link:'/about'  },
           { title: 'Work', icon: 'mdi-code-tags', link:'/work' },
-          { title: 'About', icon: 'mdi-account', link:'/about'  },
+          { title: 'Blog', icon: 'mdi-blogger', link:'/blog'  },
         ],
         options: {
           fitToSection: false,
