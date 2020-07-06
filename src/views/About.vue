@@ -29,7 +29,7 @@
           We provide services that serve in making poster design, UI design, static web creation, and also serving making Android applications.
         </span>
         <v-col cols="9">
-          <v-expansion-panels focusable flat>
+          <v-expansion-panels flat>
             <v-expansion-panel
             >
               <v-expansion-panel-header expand-icon="mdi-menu-down">Our Services</v-expansion-panel-header>
