@@ -1,22 +1,27 @@
 <template>
   <div class="section" id="home">
         <div class="section" id="description" justify="center">
-        <v-responsive  width="100vw" height="100vh">
+        <v-responsive>
         <v-container
             fluid
             class="fill-height"
         >
+            <div class="py-9"></div>
             <v-row no-gutters class="pa-5 ma-5">
-            <v-col cols="9">
+            <v-col cols="12" class="">
                 <v-spacer></v-spacer>
                 <span class="display-1 font-weight-normal" justify="center">
                 Hello!
                 </span>
             </v-col>
-            <v-col cols="9">
+            <v-col cols="8" md="8" lg="8" xs="8" sm="12" class="">
                 <span class="display-3 font-weight-bold " justify="center">
                 We Are Creative Service Provider.
                 </span>
+            </v-col>
+            <v-col cols="12" md="4" lg="4" xs="4" sm="12" class="pa-2 hidden-sm-and-down">
+                <v-img class="pa-4 ma-3" :src='require("../assets/illustrasi1.png")'/>
+                <p class="text--disabled" justify="center" align="center">Illustration by <a href="https://www.manypixels.co/">ManyPixel</a></p>
             </v-col>
             </v-row>
             <div class="py-12"></div>
@@ -24,8 +29,8 @@
         </v-responsive>
         </div>
         <div class="section" id="services">
-            <v-responsive width="100vw" height="100vh">
-            <v-container class="red fill-height" fluid>
+            <v-responsive>
+            <v-container class="fill-height" fluid>
                 <h1 class="display-1 pa-3 font-weight-bold" align="center" justify="center">Service</h1>
                 <v-row no-gutters>
                     <v-col cols="6" md="4" lg="12" xs="12" sm="12" class="pa-2">
@@ -59,7 +64,7 @@
                             </v-card-actions>
                         </v-card>
                     </v-col>
-                    <v-col cols="12" md="12" lg="12" xs="12" sm="12" class="pa-2">
+                    <v-col cols="12" md="4" lg="12" xs="12" sm="12" class="pa-2">
                         <v-card
                             color="#385F73"
                             dark
@@ -79,7 +84,7 @@
             </v-responsive>
         </div>
         <div class="section" id="team">
-            <v-responsive width="100vw" height="100vh">
+            <v-responsive>
                 <v-container fluid class="green fill-height">
                 <h1 class="display-1 pa-3 font-weight-bold" align="center" justify="center">Team</h1>
                     <v-row no-gutters>
@@ -149,3 +154,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  a {  
+    text-decoration: none;
+  }
+</style>
