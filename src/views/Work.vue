@@ -5,11 +5,11 @@
             <v-divider class="ma-5"></v-divider><br/>
             <div class="py-12"></div>
             <v-row no-gutters>
-                <v-col cols="12">
-                    <v-card elevation="0" href="http://fscreative.xyz" max-width="1051">
+                <v-col cols="12" class="pa-1">
+                    <v-card elevation="0" href="http://fscreative.xyz" max-width="1000" class="mx-auto">
                         <v-img
-                        src="https://i.ibb.co/qDZYXsx/workfsweb.png"
-                        max-height="578"
+                        src="https://i.ibb.co/4fG4sSP/webfs.png"
+                        max-height="400"
                         contain
                         class="grey darken-4 rounded-corner"
                         ></v-img>
@@ -23,10 +23,10 @@
             <div class="py-4"></div>
             <v-row no-gutters>
                 <div class="py-4"></div>
-                <v-col cols="12">
-                    <v-card elevation="0" href="https://instagram.com/persijapday" max-width="1000">
+                <v-col cols="12" class="pa-1">
+                    <v-card elevation="0" href="https://instagram.com/persijapday" max-width="1000" class="mx-auto">
                         <v-img
-                        src="https://lh3.googleusercontent.com/RWS-IMTFLx5etwwDafUNAxGmDB4nuuiRh4GF6LzgCx797Br-3zI809sofNr9-H_Nd_lvOBKF1Gc_uQWDnLNTeNUasY9E6xg_FVQOwdCpPee6_3V8L7Vbs3M-U49X-4Ap7Ga-iJV6eYViEaKtZ5qdffv9x3BMwqqA3RIfK9gbF80Wu3HB5PvX8_sKeZuBua-K7AjHGVI9y5llWCgMdfc7PjBMN9WxHB1Zbkuu5ootdED9M2tFpc4Wfed93NowbDcFvR3AeU0ocFRV7gLVBlr15Y-AWqQQph5ZWppBHzdmO4-v1hJpv1zv2sydcByjda7hV99YpgadBjhUXSAOuXpdRS4hH-n0MiQcy2bPxYstvrozdXq_Q9gjKjGL3fja-RySvFN4FmGmva5HDw7Zk0UWjtWsJLSZ1q4P_Jt4P_OKkhDc4hgFErshZJ5uA9Y1svE3vb_Ak7FWN7c0cv9Iw2W7OI8qd4Ze9L108ublC-94znO64HisrCiZYlTQFXJyWq0pMpgak83CBg1SdXG90GyN5VObjcISB9IKUg9TcdDDReQNKchIu2WEN8HQAk3qgQQjd5GhT_5XSyfMp_xn-h415OoXZiBZEF7ZAlKSqLUU6XJYjcMSeAhignB2zskV_uBoSPRxg_XOmWnLT5B1B7BmGJAMUs1NAokvmCvr28DiRPZSJFe_tkWW-hSnUDjk4w=w1000-h400-no?authuser=0"
+                        src="https://i.ibb.co/9NtpjLY/00-banner.png"
                         max-height="400"
                         contain
                         class="grey darken-4 rounded-corner"
