@@ -7,7 +7,7 @@
             class="fill-height"
         >
             <div class="py-9"></div>
-            <v-row no-gutters class="pa-5 ma-5">
+            <v-row no-gutters class="pa-3 ma-3">
             <v-col cols="7" md="7" lg="7" xs="12" sm="12" class="">
                 <v-spacer></v-spacer>
                 <span class="display-1 font-weight-normal" justify="center">
@@ -15,127 +15,99 @@
                 </span><br/>
                 <span class="display-3 font-weight-bold " justify="center">
                 We Are Creative Agency.
-                </span>
+                </span><br/>
+                <div class="py-1"></div>
+                <span class="display-5 font-weight-normal hidden-sm-and-down">Better design, better experience.</span><br/>
+                <div class="py-2"></div>
+                <v-btn outlined><span class="font-weight-bold">Hire Me!</span></v-btn>
             </v-col>
-            <v-col cols="5" md="4" lg="5" xs="4" sm="12" class="hidden-sm-and-down">
-                <v-spacer></v-spacer>
+            <v-col cols="5" md="5" lg="5" xs="12" sm="12" class="hidden-sm-and-down" justify="center">
                 <v-img class="" :src='require("../assets/welcome.png")'/>
                 <p class="text--disabled" justify="center" align="center">Illustration by <a href="https://dribbble.com/thierryfousse">Thierry Fousse</a> from <a href="https://icons8.com/">Icons8</a></p>
             </v-col>
             </v-row>
-            <div class="py-12"></div>
+            <div class="py-8"></div>
         </v-container>
         </v-responsive>
         </div>
         <div class="section" id="services">
             <v-responsive>
             <v-container class="fill-height" fluid>
-                <h1 class="display-1 pa-3 font-weight-bold" align="center" justify="center">Service</h1>
+                <h2 class="display-1 pa-3 font-weight-bold" align="center" justify="center">Service</h2>
                 <v-row no-gutters>
-                    <v-col cols="6" md="4" lg="12" xs="12" sm="12" class="pa-2">
+                    <div class="py-12"></div>
+                    <v-col cols="12" lg="4" md="4" justify="center" align="center" class="pa-2">
+                        <div class="py-8"></div>
                         <v-card
-                            color="#385F73"
-                            dark
+                            elevation="0"
                         >
-                            <v-card-title class="headline">Design</v-card-title>
+                            <v-img class="" width="80" height="80" :src='require("../assets/vector.svg")'/>
+                            <v-card-title class="ndasmu">Design</v-card-title>
 
-                            <v-card-text>Poster/UI Design</v-card-text>
-
-                            <v-card-actions>
-                            <v-btn icon text href="https://www.behance.net/falasyam"> <v-icon>fab fa-behance</v-icon></v-btn>
-                            <v-btn icon href="https://instagram.com/fscreative.id"> <v-icon>fab fa-instagram</v-icon></v-btn>
-                            </v-card-actions>
+                            <v-card-text>Poster Design, UI/UX Design. We make your design to the next level. </v-card-text>
                         </v-card>
                     </v-col>
-                    <v-col cols="6" md="4" lg="12" xs="12" sm="12" class="pa-2">
+                    <v-col cols="12" lg="4" md="4" justify="center" align="center" class="pa-2">
+                        <div class="py-8"></div>
                         <v-card
-                            color="#385F73"
-                            dark
+                            elevation="0"
                         >
-                            <v-card-title class="headline">Web</v-card-title>
+                            <v-img class="" width="80" height="80" :src='require("../assets/paint-roller.svg")'/>
+                            <v-card-title class="ndasmu">Front End Developer</v-card-title>
 
-                            <v-card-text>Vuejs, Flutter or Native</v-card-text>
-
-                            <v-card-actions>
-                            <v-btn icon> <v-icon>fab fa-js-square</v-icon></v-btn>
-                            <v-btn icon> <v-icon>fas fa-globe</v-icon></v-btn>
-                            <v-btn icon href="https://github.com/falasyam"> <v-icon>fab fa-github</v-icon></v-btn>
-                            </v-card-actions>
+                            <v-card-text>We take your website and App to the next level.</v-card-text>
                         </v-card>
                     </v-col>
-                    <v-col cols="12" md="4" lg="12" xs="12" sm="12" class="pa-2">
+                    <div class="py-2"></div>
+                    <v-col cols="12" lg="4" md="4" justify="center" align="center" class="pa-2">
+                        <div class="py-8"></div>
                         <v-card
-                            color="#385F73"
-                            dark
+                            elevation="0"
                         >
-                            <v-card-title class="headline">Mobile App</v-card-title>
+                            <v-img class="" width="80" height="80" :src='require("../assets/layers.svg")'/>
+                            <v-card-title class="ndasmu">Android App</v-card-title>
 
-                            <v-card-text>Android Apps. Base on Flutter, Kotlin or Java</v-card-text>
-
-                            <v-card-actions>
-                            <v-btn icon> <v-icon>fab fa-java</v-icon></v-btn>
-                            <v-btn icon href="https://github.com/falasyam"> <v-icon>fab fa-github</v-icon></v-btn>
-                            </v-card-actions>
+                            <v-card-text>Using Java, Kotlin and Flutter as Framework to make Android App.</v-card-text>
                         </v-card>
                     </v-col>
                 </v-row>
             </v-container>
             </v-responsive>
         </div>
-        <div class="section" id="team">
+        <div class="py-4"></div>
+        <div class="section" id="desc">
             <v-responsive>
-                <v-container fluid class="green fill-height">
-                <h1 class="display-1 pa-3 font-weight-bold" align="center" justify="center">Team</h1>
+                <v-container fluid class="fill-height">
                     <v-row no-gutters>
-                        <v-col cols="12" class="pa-1">
-                            <v-card
-                            class="mx-auto"
-                            outlined
-                            >
-                            <v-list-item three-line>
-                            <v-list-item-content>
-                                <v-list-item-title class="headline mb-1">Fala Syam</v-list-item-title>
-                                <v-list-item-content>Designer</v-list-item-content>
-                            </v-list-item-content>
-
-                            <v-list-item-avatar
-                                size="80"
-                                color="grey"
-                            ><img src="https://instagram.fsub4-1.fna.fbcdn.net/v/t51.2885-19/s320x320/72533998_425421614805632_8075389882077282304_n.jpg?_nc_ht=instagram.fsub4-1.fna.fbcdn.net&_nc_cat=108&_nc_ohc=ll5UaDaFlQ8AX-7O0Vv&oh=3e2b2bb389fc1846f3599690a7cfa7c9&oe=5F1BD212"/>
-                            </v-list-item-avatar>
-                            </v-list-item>
-
-                            <v-card-actions>
-                            <v-btn icon href="https://web.facebook.com/falabanaspati.wwooyyooaassiikkjjooss"> <v-icon>fab fa-facebook</v-icon></v-btn>
-                            <v-btn icon href="https://twitter.com/falasyam"> <v-icon>fab fa-twitter</v-icon></v-btn>
-                            <v-btn icon href="https://instagram.com/fala.syam"> <v-icon>fab fa-instagram</v-icon></v-btn>
-                            </v-card-actions>
-                        </v-card>
+                        <v-col cols="12" class="pa-3">
+                            <span class="asbetter font-weight-bold blue--text">Better design, better experience.</span><br/>
+                            <span class="display-5 font-weight-bold">
+                                As a designer and developer, we understand the perfect user interface should look good and work even better.
+                            </span>
                         </v-col>
-                        <v-col cols="12" class="pa-1">
-                            <v-card
-                            class="mx-auto"
-                            outlined
-                            >
-                            <v-list-item three-line>
-                            <v-list-item-content>
-                                <v-list-item-title class="headline mb-1">Fala Syam</v-list-item-title>
-                                <v-list-item-content>Developer</v-list-item-content>
-                            </v-list-item-content>
-
-                            <v-list-item-avatar
-                                tile
-                                size="80"
-                                color="grey"
-                            ></v-list-item-avatar>
-                            </v-list-item>
-
-                            <v-card-actions>
-                            <v-btn icon href="https://web.facebook.com/falabanaspati.wwooyyooaassiikkjjooss"> <v-icon>fab fa-facebook</v-icon></v-btn>
-                            <v-btn icon href="https://twitter.com/falasyam"> <v-icon>fab fa-twitter</v-icon></v-btn>
-                            <v-btn icon href="https://instagram.com/fala.syam"> <v-icon>fab fa-instagram</v-icon></v-btn>
-                            </v-card-actions>
-                        </v-card>
+                    </v-row>
+                </v-container>
+            </v-responsive>
+        </div>
+        <div class="py-4"></div>
+        <div class="section" id="clients">
+            <v-responsive>
+                <v-container fluid class="black fill-height">
+                    <h1 class="display-1 pa-3 font-weight-bold white--text" align="center" justify="center">Clients Talking</h1>
+                    <v-row no-gutters>
+                        <v-col cols="12" class="pa-3">
+                            <v-carousel cycle show-arrows-on-hover height="400" :show-arrows="false" hide-delimiter-background delimiter-icon="mdi-minus">
+                                <v-carousel-item
+                                  v-for="slide in slides"
+                                  :key="slide"
+                                >
+                                    <v-sheet height="100%" tile>
+                                        <v-row class="fill-height" align="center" justify="center">
+                                            <div class="slider pa-4 ma-4">{{slide}}</div>
+                                        </v-row>
+                                    </v-sheet>
+                                </v-carousel-item>
+                            </v-carousel>
                         </v-col>
                     </v-row>
                 </v-container>
@@ -150,12 +122,42 @@
 export default {
   name: 'Home',
   components: {
-  }
+  },
+  data() {
+      return {
+          slides: [
+            'Nothing',
+            'Great!',
+            'Lorem Ipsum dolor sit amet because i dont know i want you ineed you i love u'
+          ],
+      }
+  },
 }
 </script>
 
 <style scoped>
   a {  
     text-decoration: none;
+  }
+
+  .asbetter {
+      font-size: 22px;
+      line-height: 0px;
+  }
+
+  .ndasmu {
+      font-size: 34px;
+      text-align: center;
+      justify-content: center;
+      align-content: center;
+  }
+
+  .display-5 {
+      font-size: 25px;
+      line-height: 3px;
+  }
+
+  .slider{
+      font-size: 15px;
   }
 </style>

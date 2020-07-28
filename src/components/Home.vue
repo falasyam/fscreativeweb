@@ -28,7 +28,7 @@
             <v-container class="red fill-height" fluid>
                 <h1 class="display-1 pa-3 font-weight-bold" align="center" justify="center">Service</h1>
                 <v-row no-gutters>
-                    <v-col cols="6" md="4" lg="12" xs="12" sm="12" class="pa-2">
+                    <v-col cols="4" md="4" lg="4" xs="12" sm="12" class="pa-2">
                         <v-card
                             color="#385F73"
                             dark
@@ -43,7 +43,7 @@
                             </v-card-actions>
                         </v-card>
                     </v-col>
-                    <v-col cols="6" md="4" lg="12" xs="12" sm="12" class="pa-2">
+                    <v-col cols="4" md="4" lg="4" xs="12" sm="12" class="pa-2">
                         <v-card
                             color="#385F73"
                             dark
@@ -59,7 +59,7 @@
                             </v-card-actions>
                         </v-card>
                     </v-col>
-                    <v-col cols="12" md="12" lg="12" xs="12" sm="12" class="pa-2">
+                    <v-col cols="4" md="4" lg="4" xs="12" sm="12" class="pa-2">
                         <v-card
                             color="#385F73"
                             dark
