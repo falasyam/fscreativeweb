@@ -14,24 +14,21 @@
           <v-toolbar-items class="text-right hidden-sm-and-down" id="menu">
             <v-btn
               text
-            ><router-link to="/">Home</router-link></v-btn>
+            ><router-link to="/"><span class="black--text">Home</span></router-link></v-btn>
             <v-btn
               text
-            ><router-link to="/about">About</router-link></v-btn>
+            ><router-link to="/about"><span class="black--text">About</span></router-link></v-btn>
             <v-btn
               text
-            ><router-link to="/work">Work</router-link></v-btn>
+            ><router-link to="/work"><span class="black--text">Work</span></router-link></v-btn>
             <v-btn
               text
-            ><router-link to="/blog">Blog</router-link></v-btn>
-            <v-btn
-              @click="$vuetify.goTo('#contact',options )"
-              text
-            >Contact</v-btn>
+            ><router-link to="/blog"><span class="black--text">Blog</span></router-link></v-btn>
           </v-toolbar-items>
       </v-app-bar>
-      <v-bottom-sheet v-model="sheet">
-        <v-list>
+      <v-bottom-sheet v-model="sheet" class="atas">
+        <v-list class="atas">
+          <v-btn :style="{left: '50%', transform:'translateX(-50%)'}" width="1px" height="3px" color="#d1d1cf"></v-btn>
           <v-list-item
             v-for="item in items"
             :key="item.title"
@@ -87,5 +84,10 @@ export default {
     text-decoration: none;
     color: black;
     background-color: transparent;
+  }
+
+  .atas {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
 </style>

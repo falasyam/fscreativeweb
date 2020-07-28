@@ -34,7 +34,7 @@
       return {
         post: null,
         author: null,
-        rating: 4.5,
+        date: null,
       }
     },
     methods: {
@@ -50,6 +50,7 @@
         .then(result => {
           this.post = result.data[0];
           this.author = _.find(result.includes.author, );
+          this.date = result.data[0];
         })
         .catch(err => {
           throw err;

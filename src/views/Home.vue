@@ -19,7 +19,7 @@
                 <div class="py-1"></div>
                 <span class="display-5 font-weight-normal hidden-sm-and-down">Better design, better experience.</span><br/>
                 <div class="py-2"></div>
-                <v-btn outlined><span class="font-weight-bold">Hire Me!</span></v-btn>
+                <v-btn outlined><span class="font-weight-bold black--text"><a href="mailto:fscreative.id@gmail.com" class="black--text">Hire Me!</a></span></v-btn>
             </v-col>
             <v-col cols="5" md="5" lg="5" xs="12" sm="12" class="hidden-sm-and-down" justify="center">
                 <v-img class="" :src='require("../assets/welcome.png")'/>
@@ -127,8 +127,7 @@ export default {
       return {
           slides: [
             'Nothing',
-            'Great!',
-            'Lorem Ipsum dolor sit amet because i dont know i want you ineed you i love u'
+            'Nothing',
           ],
       }
   },

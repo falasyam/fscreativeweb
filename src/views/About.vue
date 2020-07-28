@@ -15,10 +15,6 @@
         <span class="text-left">
           FSCreative is Creative Agency Founded in 2019. Starting from just for fun and starting towards clearer directions.
         </span>
-        <div class="py-4"></div>
-        <v-col cols="9">
-          <v-btn outlined>JOIN US</v-btn>
-        </v-col>
         <div class="py-8"></div>
       </v-row>
       <h1 class="display-1 font-weight-bold" align="center" justify="center">What We Do?</h1>
@@ -59,7 +55,7 @@
               <v-list-item-avatar
                 size="80"
                 color="grey"
-              ><img src="https://instagram.fsub4-1.fna.fbcdn.net/v/t51.2885-19/s320x320/72533998_425421614805632_8075389882077282304_n.jpg?_nc_ht=instagram.fsub4-1.fna.fbcdn.net&_nc_cat=108&_nc_ohc=ll5UaDaFlQ8AX-7O0Vv&oh=3e2b2bb389fc1846f3599690a7cfa7c9&oe=5F1BD212"/>
+              ><v-img class="" width="80" height="80" :src='require("../assets/profile-team1.jpeg")'/>
               </v-list-item-avatar>
             </v-list-item>
             <v-card-actions>

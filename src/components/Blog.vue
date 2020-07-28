@@ -10,12 +10,12 @@
                         <div v-for="post in posts" :key="post.meta.id">
                             <router-link :to="`/blog/${post.fields.slug}`">
                             <v-img
-                                class="black--text align-end"
+                                class="black--text align-end rounded-corner"
                                 height="200px"
                                 width="400"
                                 :alt="post.fields.title" :src="`${post.fields.image[0].fields.file.url}?w=840&h=400&fit=crop`"
                             >
-                            <v-card-title>{{ post.fields.title }}</v-card-title>
+                            <v-card-title class="title-article">{{ post.fields.title }}</v-card-title>
                             </v-img>
                             </router-link>
                             <div class="py-2"></div>
@@ -79,5 +79,14 @@
     text-decoration: none;
     color: black;
     background-color: transparent;
+  }
+
+  .rounded-corner{
+    border-radius:6px;
+  }
+
+  .title-article{
+    font-size: 20px;
+    font-style: bold;
   }
 </style>
